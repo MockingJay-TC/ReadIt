@@ -21,13 +21,15 @@ nav {
   padding: 2rem 35rem;
 }
 
-nav div {
+nav div,
+nav div a {
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
   gap: 1rem;
 }
+
 nav .logo {
   background-color: #000;
   border-radius: 8rem;
@@ -39,6 +41,13 @@ nav .logo {
   justify-content: center;
   font-size: 1.2rem;
 }
+.title {
+  color: #000;
+}
+
+.title a {
+  color: #000;
+}
 nav ul {
   font-size: 1.4rem;
   display: flex;
@@ -49,8 +58,12 @@ nav ul li {
   cursor: pointer;
   font-weight: 300;
 }
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
 
-nav ul li:hover {
+nav ul li a:hover {
   color: rgba(0, 0, 255, 0.809);
 }
 
@@ -110,6 +123,8 @@ section .posts .post {
   align-items: center;
   justify-content: left;
   gap: 1rem;
+  cursor: pointer;
+  position: relative;
 }
 .avatar span {
   border-radius: 50%;
@@ -138,4 +153,159 @@ section .posts .post {
 
 .post .title {
   cursor: pointer;
+}
+.avatar h4 {
+  position: relative;
+}
+
+.avatar2 {
+  display: flex;
+  gap: 1rem;
+  justify-content: left;
+  align-items: center;
+}
+
+.avatar2 span {
+  width: 3rem;
+  height: 3rem;
+  background-color: #008aff;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 38rem;
+}
+.time2 {
+  text-align: left;
+  margin: 1rem 0;
+  color: #333333ad;
+}
+
+.avatar .more-details {
+  position: absolute;
+  width: 20rem;
+  height: 5rem;
+  z-index: 99;
+  right: 0;
+  display: none;
+}
+.time {
+  color: #3333339d;
+}
+hr {
+  border: 0.01rem solid #33333318;
+  margin: 2rem 0;
+}
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 5rem;
+}
+article {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+.articles {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.article-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  font-size: 2.5rem;
+  width: 15rem;
+  color: white;
+  font-weight: 700;
+}
+.article-img img {
+  border-radius: 0.4rem;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.article-time {
+  margin: 1.5rem 0;
+  color: #333333ca;
+}
+
+.article-time span:last-child {
+  background-color: #33333311;
+  border-radius: 2rem;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+}
+
+.article h2 {
+  font-weight: 700;
+  margin: 0.6rem 0;
+  cursor: pointer;
+}
+.article h3 {
+  font-weight: 300;
+  color: #333333c0;
+}
+
+.capsules,
+.topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.capsules h4 {
+  background-color: #3333330b;
+  border-radius: 2rem;
+  padding: 0.8rem 1.4rem;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 1rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+aside .more {
+  color: green;
+  letter-spacing: 0.15rem;
+  font-weight: 400;
+  line-height: 0.3rem;
+  margin: 3rem 0;
+  cursor: pointer;
+}
+
+.topics h4 {
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 1rem;
+}
+.our {
+  background-color: #242424;
+}
+.story {
+  color: white;
+  width: 130rem;
+  padding: 4rem 35rem;
+}
+.blog {
+  text-align: center;
+  padding: 5rem 35rem;
+  width: 130rem;
+  margin: auto;
+}
+
+.story h1,
+.blog h1 {
+  text-align: left;
+  font-size: 5rem;
+  margin: 3rem 0;
+}
+.story p,
+.blog p {
+  text-align: justify;
+  letter-spacing: 0.08rem;
+  font-size: 1.5rem;
+  line-height: 4rem;
 }
